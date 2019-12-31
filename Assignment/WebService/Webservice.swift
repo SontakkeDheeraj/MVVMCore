@@ -12,7 +12,7 @@ struct Webservice {
     static func getAllListObjects(callback: @escaping (Response?,  Error?) -> ()) {
         APIManager.sharedService.requestAPI(url: WebServiceConstants.baseURL, parameter: nil, httpMethodType: .GET) { (response, error) in
             if let data = response {
-                do{
+                do {
                     let decoder = JSONDecoder()
                     let result = try decoder.decode(Response.self, from: data)
                     callback(result, nil)

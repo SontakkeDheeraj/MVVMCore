@@ -16,7 +16,7 @@ class DetailViewModel {
     private (set) var imgData : NSData!
     
     init() {
-       
+        
     }
     
     

@@ -73,6 +73,4 @@ class BaseViewModel {
         let thumbNailData = NSData(contentsOf: url)!
         return thumbNailData
     }
-    
-    
 }
